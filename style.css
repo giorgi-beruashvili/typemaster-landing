@@ -18,12 +18,13 @@
 body {
     font-family: 'Barlow', sans-serif;
     max-width: 100vw;
+    min-height: 100vh;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 23px 24px 64px 24px;
+    padding: 23px 24.5px 64px 24px;
 }
 
 .logo {
@@ -102,10 +103,18 @@ main {
     background-color: transparent;
 }
 
-.keyboard-img {
+.keyboard-img-mobile {
     margin-top: 64px;
     width: 372px;
     border-radius: 20px;
+}
+
+.keyboard-img-tablet {
+    display: none;
+}
+
+.keyboard-img-desktop {
+    display: none;
 }
 
 .section-wireless {
@@ -115,11 +124,10 @@ main {
 .div-images {
     display: flex;
     flex-direction: row;
-    margin-top: 24px;
-    margin-bottom: 75px;
+    padding: 23px 0 75px 0;
 }
 
-.phone-and-keyboard-img {
+.phone-and-keyboard-img-mobile {
     width: 129px;
     height: 193px;
     border-top-right-radius: 20px;
@@ -128,10 +136,26 @@ main {
     transform: translate(-24px);
 }
 
-.glass-and-keyboard-img {
+.glass-and-keyboard-img-mobile {
     width: 220px;
     height: 193px;
     border-radius: 20px;
+}
+
+.phone-and-keyboard-img-tablet {
+    display: none;
+}
+
+.glass-and-keyboard-img-tablet {
+    display: none;
+}
+
+.phone-and-keyboard-img-desktop {
+    display: none;
+}
+
+.glass-and-keyboard-img-desktop {
+    display: none;
 }
 
 .div-text {
@@ -216,4 +240,260 @@ main {
     font-size: 16px;
     line-height: 26px;
     color: var(--Mostly-desaturated-dark-blue);
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 40px 40px 122px 39px;
+    }
+
+    .logo {
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    .header-btn {
+        width: 175px;
+        height: 58px;
+    }
+
+    .section-typemaster {
+        padding: 0 0 0 39px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 69px;
+        width: 100%;
+    }
+
+    .div-typemaster {
+        gap: 36.5px;
+        width: 50%;
+        height: fit-content;
+    }
+
+    .full-btn {
+        width: 175px;
+        height: 58px;
+    }
+    .keyboard-img-mobile{
+        display: none;
+    }
+
+    .keyboard-img-tablet {
+        display: flex;
+        border-radius: 20px;
+        width: 478px;
+        transform: translate(42px, -60px);
+    }
+
+    .keyboard-img-desktop {
+        display: none;
+    }
+
+    .section-wireless {
+        margin-bottom: 142px;
+    }
+
+    .div-images {
+        /* display flex gaceram da img amosvlam divtypemaster zomashi daapatarava */
+        display: flex;
+        flex-direction: row;
+        padding: 0 40px 72px 39px;
+        gap: 30px;
+    }
+
+    .phone-and-keyboard-img-mobile {
+        display: none;
+    }
+
+    .glass-and-keyboard-img-mobile {
+        display: none;
+    }
+
+    .phone-and-keyboard-img-tablet {
+        display: flex;
+        width: 214px;
+        height: 320px;
+        border-radius: 20px;
+    }
+
+    .glass-and-keyboard-img-tablet {
+        display: flex;
+        width: 445px;
+        height: 320px;
+        border-radius: 20px;
+    }
+
+    .phone-and-keyboard-img-desktop {
+        display: none;
+    }
+
+    .glass-and-keyboard-img-desktop {
+        display: none;
+    }
+
+    .div-text {
+        flex-direction: row;
+        gap: 100px;
+        padding: 0 40px 0 39px;
+    }
+
+    .wireless-heading {
+        text-align: justify;
+        padding: 0;
+    }
+    
+    .wireless-description {
+        text-align: justify;
+        padding: 7.5px 0;
+    }
+
+    .section-card {
+        padding: 0 0 0 39px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 69px;
+    }
+
+    .card-container {
+        align-items: baseline;
+        width: 281px;
+        height: 289px;
+    }
+
+    .card-text {
+        margin-top: 40px;
+    }
+
+    .card-heading {
+        text-align: left;
+    }
+
+    .card-description {
+        text-align: left;
+    }
+
+    .footer {
+        padding: 142px 249px 43px 247px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-image: url(./assets/shared/Rectangle1.png);
+        background-repeat: no-repeat;
+        background-position: right top 12%;
+    }
+    .header {
+        padding: 55px 165px 143px 165px;
+    }
+
+    .section-typemaster {
+        padding: 0 165px;
+        gap: 125px;
+        
+    }
+
+    .div-typemaster {
+        gap: 33px;
+    }
+
+    .typemaster-heading {
+        font-size: 56px;
+        line-height: 56px;
+    }
+    
+    .typemaster-description {
+        font-size: 18px;
+    }
+    
+    .empty-btn {
+        margin-right: 90px;
+    }
+
+    .keyboard-img-mobile {
+        display: none;
+    }
+
+    .keyboard-img-tablet {
+        display: none;
+    }
+
+    .keyboard-img-desktop {
+        display: flex;
+        border-radius: 20px;
+        width: 540px;
+        transform: translate(0, -60px);
+    }
+
+    .section-wireless {
+        margin-bottom: 168px;
+        padding: 0;
+        display: flex;
+        background-image: url(./assets/shared/Rectangle.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+
+    .div-images {
+        display: flex;
+        flex-direction: row;
+        padding: 0 0 0 165px;
+    }
+
+    .phone-and-keyboard-img-mobile {
+        display: none;
+    }
+
+    .glass-and-keyboard-img-mobile {
+        display: none;
+    }
+
+    .phone-and-keyboard-img-tablet {
+        display: none;
+    }
+
+    .glass-and-keyboard-img-tablet {
+        display: none;
+    }
+
+    .phone-and-keyboard-img-desktop {
+        display: flex;
+        width: 255px;
+        height: 480px;
+        border-radius: 20px;
+    }
+
+    .glass-and-keyboard-img-desktop {
+        display: flex;
+        width: 445px;
+        height: 480px;
+        border-radius: 20px;
+    }
+
+    .div-text {
+        flex-direction: column;
+        gap: 27px;
+        padding: 85.5px 165px 85.5px 119px;
+    }
+
+    .section-card {
+        padding: 0 0 0 165px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card-container {
+        width: 255px;
+    }
+
+    .card-text {
+        margin-top: 48px;
+    }
+
+    .footer {
+        text-align: center;
+    }
 }
